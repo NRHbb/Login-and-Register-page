@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and SignUp page</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form-container">
+                <div class="button-container">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="loginBtn()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="registerBtn()">Register</button>
+                </div>
+                <div class="social">
+                    <img src="Assets/fb.png">
+                    <img src="Assets/twitter.png">
+                    <img src="Assets/github.png">
+                </div>
+                <form action="submit" class="inputForm" id="login">
+                    <input type="text" class="inputField" placeholder="Username" required>
+                    <input type="password" class="inputField" placeholder="Password" required>
+                    <input type="checkbox" class="checkBox"> <span>Remember password</span>
+                    <button type="submit" class="submitBtn" >Log In</button>
+                </form>
+                <form action="submit" class="inputForm" id="register">
+                    <input type="text" class="inputField" placeholder="Username" required>
+                    <input type="email" class="inputField" placeholder="email">
+                    <input type="password" class="inputField" placeholder="Password" required>
+                    <input type="checkbox" class="checkBox"> <span>I agree to the terms & condition</span>
+                    <button type="submit" class="submitBtn" >Register</button>
+                </form>
+            </div>
+            
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
